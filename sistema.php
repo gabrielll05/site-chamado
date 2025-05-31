@@ -78,7 +78,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['titulo'], $_POST['des
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarProfile" data-bs-toggle="dropdown">
             <div class="profile-pic">
-              <img src="https://source.unsplash.com/250x250?profile" alt="Foto de Perfil">
+              <img src="img/engrenagem.png" alt="nome">
             </div>
           </a>
           <ul class="dropdown-menu">
