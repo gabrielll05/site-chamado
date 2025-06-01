@@ -57,20 +57,33 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['titulo'], $_POST['des
         .profile-menu .fa-fw {
             margin-right: 10px;
         }
+        #atendentelogo{
+          transform: translate(200%, 0%);
+            width: 20%; 
+        }
+        h1{
+          text-align: center;
+          position: relative;
+          top: -135px;
+      
+        }
+        .custom-navbar{
+  background-color: #050034; 
+}
     </style>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
   <div class="container-fluid">
-    <a class="navbar-brand btn btn-outline-light rounded-pill px-3" href="sistema.php">CHAMADO</a>
+    <a class="navbar-brand btn btn-outline-primary rounded-pill px-3" href="sistema.php">CHAMADO</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="navbar-brand btn btn-outline-light rounded-pill px-3" href="meus_chamados.php">Meus chamados</a>
+          <a class="navbar-brand btn btn-outline-primary rounded-pill px-3" href="meus_chamados.php">Meus chamados</a>
       </ul>
     </div>
     </ul>
@@ -78,7 +91,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['titulo'], $_POST['des
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarProfile" data-bs-toggle="dropdown">
             <div class="profile-pic">
-              <img src="img/configuracao.jpg" alt="nome">
+              <img id="configuracao" src="img/configuracao.jpg" alt="nome">
             </div>
           </a>
           <ul class="dropdown-menu">
@@ -89,9 +102,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['titulo'], $_POST['des
   </div>
 </nav>   
     </div>
+    <img src="img/atendente logo (2).png" alt="" id="atendentelogo">
   </div>
 </nav>
 <div class="container mt-5">
+  
     <h2>ABRIR UM CHAMADO</h2>
     
     <?= $mensagem ?>

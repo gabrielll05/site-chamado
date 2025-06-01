@@ -48,30 +48,32 @@ if (isset($_POST['submit'])) {
         body {
             font-family: Arial, Helvetica, sans-serif;
             color: aliceblue;
-            background-color: black;
+            background-color: white;
+        
+            
         }
 
         .box {
-            position: absolute;
+            
             top: 65%;
             left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: rgb(255, 255, 255);
+            transform: translate(80%, 0%);
+            background-color: #050034;
             padding: 20px;
-            border-radius: 20px;
+            border-radius: 50px;
             width: 35%;
-            color: black;
-
-
+            color: white;
         }
 
         fieldset {
-            border: 3px solid white;
+            border: 5px solid white;
+            border-radius: 10px;
+            
         }
 
         legend {
             font-size: 180%;
-            border: 1px solid black;
+            border: 1px solid white;
             padding: 10px;
             text-align: center;
             width: 40%;
@@ -85,8 +87,8 @@ if (isset($_POST['submit'])) {
         .inputUser {
             background: none;
             border: none;
-            border-bottom: 1px solid rgb(0, 0, 0);
-            color: black;
+            border-bottom: 1px solid rgb(255, 255, 255);
+            color: white;
             font-size: 15px;
             width: 100%;
             letter-spacing: 2px;
@@ -112,14 +114,18 @@ if (isset($_POST['submit'])) {
         }
 
         #submit:hover {
-            background-color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
             color: aliceblue;
         }
+        #data_nascimento{
+            color: white;
+        }
     </style>
+    
 </head>
 
 <body>
-    <a href="home.php">Voltar a pagina anterior</a>
+    <a href="admin.php">Voltar a pagina anterior</a>
     <div class="box">
         <form action="formulario.php" method="post">
             <br><br><br>
@@ -193,7 +199,6 @@ if (isset($_POST['submit'])) {
                 <input type="submit" name="submit" id="submit">
             </fieldset>
         </form>
-
     </div>
 </body>
 

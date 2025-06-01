@@ -8,12 +8,12 @@
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background-color: black
+            background-color: white
 
         }
 
         div {
-            background-color: rgba(255, 255, 255, 0.8);
+            background-color: #050034;
             position: absolute;
             top: 50%;
             left: 50%;
@@ -39,7 +39,7 @@
         }
 
         h1 {
-            color: black;
+            color: white;
         }
         img{
              transform: translate(+200%, +2%);
@@ -51,7 +51,7 @@
 <body>
     <a href="home.php">Voltar a pagina anterior</a>
     <br>
-    <img src="img/atendente logo.png" alt="">
+    <img src="img/atendente logo (2).png" alt="">
     <div>
         <h1>LOGIN</h1>
         <form action="testeLogin.php" method="POST">
