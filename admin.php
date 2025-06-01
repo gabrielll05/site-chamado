@@ -17,7 +17,28 @@ $result = $conexao->query("SELECT chamados.*, usuarios.email FROM chamados JOIN 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adm</title>
+
     <style>
+          .profile-pic {
+            display: inline-block;
+            vertical-align: middle;
+            width: 50px;
+            height: 50px;
+            overflow: hidden;
+            border-radius: 50%;
+        }
+        .profile-pic img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        .profile-menu .dropdown-menu {
+            right: 0;
+            left: unset;
+        }
+        .profile-menu .fa-fw {
+            margin-right: 10px;
+        }
         h2{
             text-align: center;
         }
@@ -35,30 +56,32 @@ $result = $conexao->query("SELECT chamados.*, usuarios.email FROM chamados JOIN 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">PAINEL DE CHAMADOS</a>
+    <a class="navbar-brand btn btn-outline-light rounded-pill px-3" href="#">CHAMADO</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      </ul>
+    </div>
+    </ul>
       <ul class="navbar-nav ms-auto profile-menu">
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarProfile" data-bs-toggle="dropdown">
             <div class="profile-pic">
-              <img src="https://source.unsplash.com/250x250?profile" alt="Foto de Perfil">
+              <img src="img/configuracao.jpg" alt="nome">
             </div>
           </a>
           <ul class="dropdown-menu">
-            <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="chamado.php"><i class="fas fa-sign-out-alt fa-fw"></i> Sair</a></li>
           </ul>
         </li>
       </ul>
-    </div>
   </div>
-</nav>
- <h2>Painel do Administrador</h2>
+</nav> 
+ <h2>CHAMADOS REALIZADOS</h2>
 <table border="10" >
     <tr>
         <th>ID</th><th>USUARIO</th><th>TÍTULO</th><th>STATUS</th><th>DESCRIÇÃO</th>

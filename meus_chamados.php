@@ -59,7 +59,7 @@ $result = $stmt->get_result();
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link btn btn-outline-light rounded-pill px-3 mx-1" href="meus_chamados.php">Meus chamados</a>
+         <a class="navbar-brand btn btn-outline-light rounded-pill px-3" href="meus_chamados.php">Meus chamados</a>
         </li>
       </ul>
     </div>
@@ -72,15 +72,13 @@ $result = $stmt->get_result();
             </div>
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#"><i class="fas fa-user fa-fw"></i> Conta</a></li>
-            <li><a class="dropdown-item" href="#"><i class="fas fa-cog fa-fw"></i> Configurações</a></li>
-            <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="chamado.php"><i class="fas fa-sign-out-alt fa-fw"></i> Sair</a></li>
           </ul>
         </li>
       </ul>
   </div>
-</nav>   
+</nav>  
+</div> 
 <div class="container mt-5">
     <h2>Meus Chamados</h2>
     <p>Usuário: <strong><?= htmlspecialchars($email) ?></strong></p>

@@ -41,11 +41,17 @@
         h1 {
             color: black;
         }
+        img{
+             transform: translate(+200%, +2%);
+            width: 20%;
+            }   
+
     </style>
 </head>
-
 <body>
     <a href="home.php">Voltar a pagina anterior</a>
+    <br>
+    <img src="img/atendente logo.png" alt="">
     <div>
         <h1>LOGIN</h1>
         <form action="testeLogin.php" method="POST">

@@ -71,7 +71,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['titulo'], $_POST['des
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="navbar-brand btn btn-outline-light rounded-pill px-3" href="meus_chamados.php">Meus chamados</a>
-        </li>
       </ul>
     </div>
     </ul>
@@ -83,9 +82,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['titulo'], $_POST['des
             </div>
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#"><i class="fas fa-user fa-fw"></i> Conta</a></li>
-            <li><a class="dropdown-item" href="#"><i class="fas fa-cog fa-fw"></i> Configurações</a></li>
-            <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="chamado.php"><i class="fas fa-sign-out-alt fa-fw"></i> Sair</a></li>
           </ul>
         </li>
@@ -96,7 +92,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['titulo'], $_POST['des
   </div>
 </nav>
 <div class="container mt-5">
-    <h2>Criar Chamado</h2>
+    <h2>ABRIR UM CHAMADO</h2>
     
     <?= $mensagem ?>
 
@@ -109,9 +105,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['titulo'], $_POST['des
             <label for="descricao" class="form-label">Descrição</label>
             <textarea name="descricao" class="form-control" rows="4" required></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Enviar Chamado</button>
+        <button type="submit" class="btn btn-dark">Enviar Chamado</button>
     </form>
 </div>
-
 </body>
 </html>
