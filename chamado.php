@@ -28,6 +28,7 @@
   <body>
     <!-- Logo como fundo -->
     <img src="img/chamados.jpg" alt="Logo" class="logo-bg">
+    
 
 
         div {
