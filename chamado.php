@@ -7,10 +7,13 @@
     <title>Login</title>
     <style>
         body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to bottom right, #007BFF, #ffffff); /* Degradê azul para branco */
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
 
-        }
 
         div {
             background-color: rgba(255, 255, 255, 0.8);
