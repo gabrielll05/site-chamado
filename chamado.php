@@ -8,9 +8,7 @@
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background-color: linear-gradient(to bottom right, #007BFF, #ffffff);
-            url ('img/chamados.jpg') no-repeat center center;
-            background-size: contain;
+            background-color: black
 
         }
 
