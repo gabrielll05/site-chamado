@@ -7,29 +7,12 @@
     <title>Login</title>
     <style>
         body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(to bottom right, #007BFF, #ffffff); /* Degradê azul para branco */
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: linear-gradient(to bottom right, #007BFF, #ffffff);
+            url ('img/chamados.jpg') no-repeat center center;
+            background-size: contain;
 
-
- .logo-bg 
-        position: absolute;
-        top: 50%; /* Ajuste a posição vertical */
-        left: 50%; /* Ajuste a posição horizontal */
-        transform: translate(-50%, -50%); /* Centraliza a imagem */
-        width: 200px; /* Defina o tamanho da logo */
-        opacity: 0.1; /* Ajuste a opacidade para um efeito suave */
-        z-index: -1; /* Garante que a imagem ficará atrás do conteúdo */
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Logo como fundo -->
-    <img src="img/chamados.jpg" alt="Logo" class="logo-bg">
-    
-
+        }
 
         div {
             background-color: rgba(255, 255, 255, 0.8);
