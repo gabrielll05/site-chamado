@@ -63,7 +63,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['titulo'], $_POST['des
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="sistema.php">CHAMADO</a>
+    <a class="navbar-brand btn btn-outline-light rounded-pill px-3" href="sistema.php">CHAMADO</a>
+    
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -71,14 +72,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['titulo'], $_POST['des
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" href="meus_chamados.php">Meus chamados</a>
+          <a class="nav-link btn btn-outline-light rounded-pill px-3 mx-1" href="meus_chamados.php">Meus chamados</a>
         </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
       </ul>
       <ul class="navbar-nav ms-auto profile-menu">
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarProfile" data-bs-toggle="dropdown">
             <div class="profile-pic">
-              <img src="img/engrenagem.png" alt="nome">
+              <img src="img/configuracao.jpg" alt="nome">
             </div>
           </a>
           <ul class="dropdown-menu">
