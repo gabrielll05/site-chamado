@@ -72,7 +72,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['titulo'], $_POST['des
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link btn btn-outline-light rounded-pill px-3 mx-1" href="meus_chamados.php">Meus chamados</a>
+          <a class="navbar-brand btn btn-outline-light rounded-pill px-3" href="meus_chamados.php">Meus chamados</a>
         </li>
       </ul>
     </div>
