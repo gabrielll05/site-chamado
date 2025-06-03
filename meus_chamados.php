@@ -104,7 +104,7 @@ $result = $stmt->get_result();
   </nav>
   <div class="container mt-5">
     <h2>Meus Chamados</h2>
-    <p>Usuário: <strong><?= htmlspecialchars($email) ?></strong></p>
+    <p>Usuário: <strong><?= htmlspecialchars(string: $email) ?></strong></p>
 
     <table class="table table-bordered mt-4">
       <thead class="table-primary">

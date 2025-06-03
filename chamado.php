@@ -49,7 +49,6 @@
     </style>
 </head>
 <body>
-    <a href="home.php">Voltar a pagina anterior</a>
     <br>
     <img src="img/atendente logo (2).png" alt="">
     <div>

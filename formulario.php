@@ -20,7 +20,6 @@ if (isset($_POST['submit'])) {
     include_once('config.php');
 
     $nome = $_POST['nome'];
-    $senha = $_POST['senha'];
     $email = $_POST['email'];
     $telefone = $_POST['telefone'];
     $sexo = $_POST['genero'];
@@ -29,6 +28,9 @@ if (isset($_POST['submit'])) {
     $cargo = $_POST['cargo'];
     $setor = $_POST['setor'];
     $tipo = $_POST['tipo'];
+
+    //GERADOR DE SENHA AUTOMATICO QUE VAI SER REPASSADO PARA O USUARIO
+    $senha = str_pad(rand(0, 99999), 5, '0', STR_PAD_LEFT);
 
     $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,senha,email,telefone,sexo,data_nasc,matricula,cargo,setor,tipo)
         VALUES ('$nome','$senha','$email','$telefone','$sexo','$data_nasc','$matricula','$cargo','$setor','$tipo')");
@@ -135,11 +137,6 @@ if (isset($_POST['submit'])) {
                 <div class="inputBox">
                     <label for="nome" class="LabelInput">Nome Completo</label>
                     <input type="text" name="nome" id="nome" class="inputUser" required>
-                </div>
-                <br><br>
-                <div class="inputBox">
-                    <label for="senha" class="LabelInput">Senha</label>
-                    <input type="password" name="senha" id="senha" class="inputUser" required>
                 </div>
                 <br> <br>
                 <div class="inputbox">
